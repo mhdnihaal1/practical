@@ -1,0 +1,96 @@
+//=======================================================Array things===================================
+
+// $push:
+db.collectionName.updateOne({ _id: 1 },{ $push: { items: "apple" } });
+
+
+// $pushAll:
+ db.collectionName.updateOne({ _id:1},{ $push:{ items:{ $each:["banana","orange"]}}});
+
+
+// $addToSet: 
+db.collectionName.updateOne({ _id: 1 },{ $addToSet: { items: "grape" } });
+
+// $pop: 
+ db.collectionName.updateOne({ _id: 1 },{ $pop: { items: -1 } });
+
+// $pull:
+db.collectionName.updateOne({ _id: 1 },{ $pull: { items: "orange" } });
+
+// $pullAll:
+ db.collectionName.updateOne({ _id: 1},{ $pullAll:{ items:["banana", "grape"]}});
+
+// $elemMatch: 
+db.collectionName.find({ items:{$elemMatch:{ price:{ $gt: 10}}}});
+
+// $size:
+ db.collectionName.find({ items:{ $size: 3 }});
+
+// $exists:
+  db.collectionName.find({ items:{ $exists: true}});     
+
+// $all: 
+ db.collectionName.find({ items:{$all:["apple","orange"]}});
+
+// $position:
+ db.collectionName.updateOne({ _id:1},{ $push:{ items:{ $each:["kiwi"],$position:1}}});
+
+// $each: 
+ db.collectionName.updateOne({ _id: 1 },{ $push:{ items:{ $each:["pear", "mango"]}}});
+
+//====================$group===================
+
+db.collectionName.aggregate([
+    { $group: { _id: "$city", totalPeople: { $sum: 1 } } } // Groups by city and counts people
+  ]);
+  
+
+//====================$match==================
+
+db.collectionName.aggregate([
+    { $match: { age: { $gte: 25 } } } // Filters documents with age >= 25
+  ]);
+  
+
+//==================== $project  =====================
+
+db.collectionName.aggregate([
+    { $project: { name: 1, age: 1, city: 1, _id: 0 } } // Includes specific fields
+  ]);
+
+
+  //===================== msort stage=====================
+
+  db.collectionName.aggregate([
+    { $sort: { age: -1 } } // Sorts documents by age in descending order
+  ]);
+  
+
+  //=================limit stage ================
+
+  db.collectionName.aggregate([
+    { $limit: 5 } // Returns the first 5 documents
+  ]);
+  
+  //==================skip===================
+
+  db.collectionName.aggregate([
+    { $skip: 5 } // Skips the first 5 documents
+  ]);
+
+  
+//====================$unwind==================
+
+db.collectionName.aggregate([
+    { $unwind: "$hobbies" } // Unwinds the array field "hobbies"
+  ]);
+  
+
+  //====================add new field to document===============
+
+  db.collectionName.aggregate([
+    { $addFields: { fullName: { $concat: ["$firstName", " ", "$lastName"] } } } 
+  ]);
+
+
+  

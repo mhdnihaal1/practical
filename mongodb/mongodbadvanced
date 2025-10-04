@@ -1,0 +1,48 @@
+  //=====================lookup stage==================
+
+  db.collectionName.aggregate([
+    {
+      $lookup: {
+        from: "orders", // The other collection
+        localField: "_id", // Local field
+        foreignField: "userId", // Foreign field
+        as: "userOrders" // Output array field
+      }
+    }
+  ]);
+
+//========================capped collection==================
+
+db.createCollection("cappedCollection", { capped: true, size: 10000, max: 100 });
+
+
+// ====================$ regex three version==========
+
+db.collectionName.find({
+    name: { $regex: /^A/, $options: "i" } // Case-insensitive match for names starting with "A"
+  });
+  
+
+  db.collectionName.find({
+    description: { $regex: /test/, $options: "i" } // Matches "test" anywhere in the description
+  });
+  
+
+  db.collectionName.find({
+    email: { $regex: /\.com$/, $options: "i" } // Matches emails ending in ".com"
+  });
+  
+
+  //======================Accumulators ($min, $max, $avg) =========================
+
+  db.collectionName.aggregate([
+    {
+      $group: {
+        _id: null, // Group all documents together
+        minAge: { $min: "$age" },
+        maxAge: { $max: "$age" },
+        avgAge: { $avg: "$age" }
+      }
+    }
+  ]);
+  

@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "node": "^21.1.0",
+    "nodemon": "^3.0.1",
+    "package": "^1.0.1",
+    "packages": "^0.0.8",
+    "yarn": "^1.22.21",
+    "npm": "start"
+  },
+  "name": "practical",
+  "version": "1.0.0",
+  "main": "categorylist-unlist.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
