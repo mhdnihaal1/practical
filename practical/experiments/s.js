@@ -19,7 +19,7 @@
 // const set = setInterval(()=>{
 //     console.log(123);
 // },3000)
-
+ 
 // setTimeout(()=>{
 //     clearInterval(set)
 //     console.log('ok');

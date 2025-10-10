@@ -238,11 +238,11 @@
 
 
 
-
+ 
 
 // _________________________________________________________________________________________________________________________________________________________________________
 
-// Math METHODS::
+// Math METHODS:
 
 
 // JavaScript's `Math` object provides a wide range of mathematical methods and constants. Here's a list of some of the commonly used methods and properties available in the `Math` object:

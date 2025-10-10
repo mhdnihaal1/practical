@@ -75,7 +75,7 @@
 // function* evenNumbers(arr) {
 //     for (let num of arr) {
 //         if (num % 2 === 0) {
-//             yield num;
+//             yield num; 
 //         }
 //     }
 // }

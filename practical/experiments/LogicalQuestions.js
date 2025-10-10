@@ -7,7 +7,7 @@
 // console.log({} + false); // "[object Object]false"
 
 // console.log([1, 2] + 3); // "1,23"
-
+ 
 // console.log(5 + "5"); // "55"
 
 // console.log("5" + false); // "5false"

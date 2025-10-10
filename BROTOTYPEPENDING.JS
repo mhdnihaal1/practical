@@ -294,8 +294,8 @@
 // Functional Scope
 // Implicit Type coercion vs Explicit type coercion
 // Object.create vs Constructor Pattern
-// Callback Hell String Coercion
-// Shallow Copy 
+// Callback Hell String Coercion
+// Shallow Copy  
 // IIFE 
 // Benefits of IIFE
 // Event.preventDefault
