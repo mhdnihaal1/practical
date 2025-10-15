@@ -25,8 +25,11 @@
 // Functional style — Encourages declarative programming.
 
 //  const number = [1, 2, 3, 4, 5];
-//--  const foreach=number.forEach((number,index)=>console.log(index+':'+number))
+
+//-- const foreach = number.forEach((number,index)=>console.log(index+':'+number))
+
 //-- number.forEach((num,index)=>console.log(num))
+
 //output
 // Element at index 0: 1
 // Element at index 1: 2

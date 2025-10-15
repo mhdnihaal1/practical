@@ -425,7 +425,7 @@
 // SHA1, MD5, CRC32, other popular hashing algorithms
 // hash table
 // Time Complexity, 
-// Space complexity for sotings, 
+// Space complexity for sortings, 
 // Practices stacks and queues problems.
 
 // WEEK-15

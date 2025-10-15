@@ -83,6 +83,6 @@
 // console.log({} == {}); // false
 
 
-var a =1 + abc;
- abc = 10;
-console.log(a)
+// var a =1 + abc;
+//  abc = 10;
+// console.log(a)
