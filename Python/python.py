@@ -151,17 +151,214 @@
 # asyncio.run(main())
 
 
-# ----------------------- show always last ------------------------
+# -----------List unpacking / extended unpacking
+
+# a, *b, c = [1, 2, 3, 4, 5]
+# print(a, b, c)  # 1 [2, 3, 4] 5
 
 
-# 🔍 11. Popular Python Uses
+# --------------Ternary expressions
 
-# Web Development – Django, Flask
+# age = 18
+# msg = "Adult" if age >= 18 else "Minor"
+# print(msg)
 
-# Data Science – Pandas, NumPy, Matplotlib
+# ----------Multiple assignment
 
-# Machine Learning – Scikit-learn, TensorFlow
+# x = y = z = 10
+# a, b = 1, 2
 
-# Automation/Scripting – Selenium, OS, Sys
+# ----------------F-strings
 
-# Game Development – Pygame
+# name, age = "Nihal", 22
+# print(f"My name is {name} and I'm {age}")
+
+# ----------Walrus operator (:=) — assign inside expressions
+
+# if (n := len("Python")) > 3:
+#     print(n)
+
+# ------------List comprehensions
+
+# squares = [x**2 for x in range(10)]
+
+# ----------Dictionary comprehensions
+# squares = {x: x**2 for x in range(5)}
+
+# ----------Set comprehensions
+
+# unique = {ch for ch in "hello"}
+
+# -------------Namedtuple
+
+# from collections import namedtuple
+
+# Point = namedtuple("Point", "x y")
+# p = Point(10, 20)
+
+# ------------defaultdict
+
+# from collections import defaultdict
+
+# d = defaultdict(int)
+# d["a"] += 1
+
+# -------------Args & kwargs
+
+# def greet(*names, **details):
+#     print(names, details)
+
+# greet("A", "B", age=22, country="India")
+
+# ----------Function aliasing
+
+# def hello(): print("hi")
+# say = hello
+# say()
+
+# ---------Closures (state inside function)
+
+# def counter():
+#     count = 0
+#     def inc():
+#         nonlocal count
+#         count += 1
+#         return count
+#     return inc
+
+# c = counter()
+# print(c(), c())  # 1 2
+
+# --------Decorators with arguments
+
+# def repeat(n):
+#     def wrapper(func):
+#         def inner(*args):
+#             for _ in range(n): func(*args)
+#         return inner
+#     return wrapper
+
+# @repeat(3)
+# def say_hi(): print("Hi!")
+
+# say_hi()
+
+# ---------Class & instance
+
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#     def greet(self):
+#         return f"Hi {self.name}"
+
+# p = Person("Nihal")
+# print(p.greet())
+
+# ---------Inheritance
+
+# class A: pass
+# class B(A): pass
+
+# -----------Class methods & static methods
+
+# class Math:
+#     @staticmethod
+#     def add(x, y): return x + y
+
+#     @classmethod
+#     def info(cls): return "Math utilities"
+
+# print(Math.add(3, 5))
+
+# -------------Magic methods (dunder methods)
+
+# class Point:
+#     def __init__(self, x, y):
+#         self.x, self.y = x, y
+#     def __add__(self, other):
+#         return Point(self.x + other.x, self.y + other.y)
+
+# p1, p2 = Point(1, 2), Point(3, 4)
+# print((p1 + p2).__dict__)
+
+# ------------File & OS Operations
+
+# import os, json, csv
+
+# with open("data.txt", "w") as f:
+#     f.write("hello")
+
+# os.listdir(".")
+# json.dump({"a": 1}, open("data.json", "w"))
+
+# ------Iterators & Generators
+
+# def gen():
+#     yield "Hello"
+#     yield "World"
+
+# for x in gen(): print(x)
+
+# ------Threading
+
+# import threading
+
+# def work(): print("Task done!")
+# t = threading.Thread(target=work)
+# t.start()
+
+# ------Async/Await
+
+# import asyncio
+
+# async def say():
+#     await asyncio.sleep(1)
+#     print("Async done")
+
+# asyncio.run(say())
+
+# ----eval / exec
+
+# code = "print('Executed!')"
+# exec(code)
+
+# ------getattr / setattr
+
+# class A: pass
+# setattr(A, "x", 10)
+# print(getattr(A, "x"))
+
+# -------Functional Programming Tools
+
+# from functools import reduce
+# from itertools import combinations, permutations
+
+# nums = [1, 2, 3]
+# print(reduce(lambda a, b: a + b, nums))
+# print(list(permutations(nums)))
+
+# ------Modules & Imports
+
+# # mymodule.py
+# def greet(): print("Hi")
+
+# # main.py
+# import mymodule
+# mymodule.greet()
+
+# ------Typing & Annotations
+
+# from typing import List, Tuple, Dict
+
+# def add(nums: List[int]) -> int:
+#     return sum(nums)
+
+
+# ------Error Handling
+
+# try:
+#     1 / 0
+# except ZeroDivisionError as e:
+#     print("Can't divide by zero")
+# finally:
+#     print("Done")
