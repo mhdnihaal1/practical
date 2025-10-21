@@ -235,15 +235,6 @@
 // perform backup, restore
 
  
- 	
-// Personal Details
-// Week 1-9
-// Week 10-19
-// Week 20-28
-// English Assessment (Week 0-28)
-// Pendings:
-// Task
-// Edit user not working
 
 // JS
 // memoization practicals
@@ -330,13 +321,6 @@
 // Scaling in mongodb
 
  
- 	
-// Personal Details
-// Week 1-9
-// Week 10-19
-// Week 20-28
-// English Assessment (Week 0-28)
-// Pendings:
 
 // JS
 // - event loop

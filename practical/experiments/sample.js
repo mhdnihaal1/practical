@@ -1,3 +1,413 @@
+ // find the freq of elements in an array
+// - countdown timer that ticks to 0 and stops 
+// - tomorrow’s date in DD/MM/YYYY format
+// - .reduce(): count occurrences of a value 
+// - remove all occurrences of a value from an array
+// - remove nth element from array
+// - cancel a setTimeout after 4 seconds
+// - switch syntax
+
+
+
+
+
+
+
+// --------------------------------Web API
+
+// Purpose:
+// Browser-provided APIs for tasks like DOM, fetch, timers, etc.
+
+// Advantage: Simplifies complex operations.
+// Disadvantage: Available only in browser environments.
+
+// -----------------------------------Event Loop
+
+// Purpose:
+// Manages the execution of synchronous and asynchronous code in JS.
+
+// Advantage: Enables non-blocking behavior.
+// Disadvantage: Harder debugging for async operations.
+
+// ---------------------------------Design Pattern
+
+// Purpose:
+// Reusable solutions for common coding problems.
+
+// Example Patterns:
+// Singleton, Factory, Observer, Module.
+// ----------------------------------------Pure Functions
+
+// Purpose:
+// A function that always returns the same output for the same input and causes no side effects.
+
+// Advantage: Predictable and testable.
+// Disadvantage: Can’t handle async or external state.
+
+// -------------------------------------------Arrow Functions
+
+// Purpose:
+// Short syntax for writing functions without their own this context.
+
+// Advantage: Compact, preserves outer this.
+// Disadvantage: Can’t be used as constructors or with arguments.
+
+// ------------------------------------Map Collection
+
+// Purpose:
+// Stores key–value pairs with unique keys and preserves insertion order.
+
+// Advantage: Allows any data type as a key.
+// Disadvantage: Slightly more memory than objects.
+
+ 
+// --------------------------------------------Throw Statement
+
+// Purpose:
+// Used to manually generate custom errors or exceptions.
+
+// Advantage: Enables custom error handling.
+// Disadvantage: Stops program execution unless caught.
+
+// ----------------------------------------Block
+
+// Purpose:
+// Used to group multiple statements, usually inside { }, often for scoping let and const.
+
+// Advantage: Prevents variable leakage to outer scope.
+// Disadvantage: Variables can’t be accessed outside the block.
+      
+// --------------------------------------Parent class of Array
+
+// Purpose: Arrays in JS are derived from the Array constructor, which itself extends Object.
+
+// Advantage: Inherits all Object properties like toString, hasOwnProperty.
+
+// Disadvantage: Sometimes confusing when checking types (typeof [] === "object").
+
+
+// --------------------------------------Map vs Object
+
+// Purpose: Both store key–value pairs, but Map allows any key type.
+
+// Feature	Map                             object
+// Key type	Any (even objects)	Only string/symbol
+// Order	Maintains insertion order	Not guaranteed
+// Iteration	Easier with .forEach	Requires manual iteration
+
+
+// ----------------------------------------------Object.entries()
+
+// Purpose: Converts an object into an array of [key, value] pairs.
+
+// Advantage: Makes iteration and transformation easy.
+// Disadvantage: Not suitable for very large objects due to memory overhead.
+
+
+// --------------------------------------eval()
+
+// Purpose: Executes a string of JS code.
+
+// Advantage: Dynamically run code at runtime.
+// Disadvantage: Highly insecure and slow (avoid in production)
+
+
+// --------------------------------Properties of Error()
+
+// Purpose: Provides structured error details.
+
+// Main Properties:
+
+// name
+
+// message
+
+// stack
+
+// ----------------------------------Running async function without await
+
+// Purpose: Execute async tasks without blocking.
+
+// Advantage: Non-blocking execution.
+// Disadvantage: You can’t catch errors easily.
+
+
+// -------------------------------------Boxing
+
+// Purpose: JS wraps primitive values into objects when needed (like new Number(5) automatically).
+
+// Advantage: Allows using methods on primitives.
+// Disadvantage: Slight performance cost.
+
+
+// -----------------------Labels
+
+// Purpose: Used with loops for breaking specific loops.
+
+// Advantage: Helps control nested loops.
+// Disadvantage: Reduces readability.
+
+
+//---------------------------------- static (in class)
+
+// Purpose: Declares methods/properties that belong to the class, not instances.
+
+// Advantage: Useful for utility methods.
+// Disadvantage: Can’t be accessed via object instances.
+
+// -------------------------closures
+// 🧠 Purpose
+
+// A closure allows a function to “remember” variables from its outer scope even after that outer function has finished executing.
+
+// ✅ Advantages
+
+// Enables data privacy (like private variables in OOP).
+
+// Useful for function factories and event handlers.
+
+// Keeps state between function calls.
+
+// ⚠️ Disadvantages
+
+// Can cause memory leaks if large objects are retained accidentally.
+
+// Harder to debug due to hidden state.
+// -------------------------------Starvation
+// 🧠 Purpose / Meaning
+
+// Starvation occurs when some operations never get CPU time or never execute because other tasks are hogging resources.
+
+// It’s a scheduling problem — not a feature.
+
+// ✅ Advantage
+
+// (None directly — it’s usually something to avoid.)
+
+// Can be used in stress tests to identify performance bottlenecks.
+
+// ⚠️ Disadvantages
+
+// Leads to unresponsive applications.
+
+// Certain async tasks or I/O operations may never execute.
+
+// Bad user experience.
+// ------------------------------------------this Context
+// 🧠 Purpose
+
+// this refers to the object that is currently executing the function.
+// Its value changes depending on how a function is called.
+
+// ✅ Advantages
+
+// Enables object-oriented programming in JavaScript.
+
+// Allows methods to operate on the data they belong to.
+
+// ⚠️ Disadvantages
+
+// Can be confusing in nested or callback functions.
+
+// Arrow functions don’t bind their own this, which can lead to bugs.
+
+
+// --------------------------finally
+
+// Purpose:
+// Used in try...catch...finally to run cleanup code (e.g., closing DB, ending connection) regardless of success or failure.
+
+// Advantages:
+
+// Ensures code executes no matter what.
+
+// Avoids code duplication for cleanup.
+
+// Disadvantages:
+
+// Can hide errors if not used carefully (e.g., throwing inside finally)
+
+
+// ----------------------------Nullish Coalescing (??)
+
+// Purpose:
+// Provides a default value only if the variable is null or undefined (not for 0 or "").
+
+// Advantages:
+
+// Safer defaulting than || (which treats 0, "" as false).
+
+// Disadvantages:
+
+// Limited to null and undefined (not falsy values like 0)
+
+
+// n----------------------------------Hoisting: Normal vs Arrow Function
+
+// Purpose:
+// Hoisting moves function declarations to the top of scope.
+
+// Advantages:
+
+// Regular functions can be used before declaration.
+
+// Disadvantages:
+
+// Arrow functions assigned to variables are not hoisted.
+
+// -----------------------------ECMAScript (ES
+
+// Purpose:
+// ECMAScript is the standard on which JavaScript is based (e.g., ES5, ES6, ES2020).
+
+// Advantages:
+
+// Defines consistent JS behavior across browsers.
+
+//-------------------------- ES6 Alternative for IIFE
+
+// Purpose:
+// In ES6 modules, top-level code runs in its own scope — no need for IIFE.
+
+// Example:
+
+// // Before ES6
+// (function() {
+//   console.log("IIFE running");
+// })();
+
+// // ES6 module
+// {
+//   const msg = "Scoped variable";
+//   console.log(msg);
+// }
+
+// -------------------------------Symbol
+
+// Purpose:
+// A unique and immutable primitive value used as object keys.
+
+// Advantages:
+
+// Avoids property name collisions.
+
+// Disadvantages:
+
+// Not enumerable (harder to debug or iterate).
+
+// const id = Symbol("id");
+// const user = { [id]: 123 };
+// console.log(user[id]); // 123
+
+
+// ---------------------------------JIT (Just-In-Time Compilation)
+
+// Purpose:
+// JIT compiles JS code at runtime for faster execution.
+
+// Advantages:
+
+// Improves performance dynamically.
+
+// Disadvantages:
+
+// May consume more memory/time during compilation.
+
+// V8 Engine (Chrome/Node) uses JIT
+// let sum = (a, b) => a + b;
+// console.log(sum(5, 10));
+
+
+// -------------------------------------Memoization
+
+// Purpose:
+// Caches function results to improve performance on repeated calls.
+
+// Advantages:
+
+// Faster repeated computations.
+
+// Reduces redundant work.
+
+// Disadvantages:
+
+// Uses more memory for cache storage.
+
+// function memoizedAdd() {
+//   const cache = {};
+//   return (x) => {
+//     if (cache[x]) return cache[x];
+//     console.log("Computing...");
+//     return (cache[x] = x + 10);
+//   };
+// }
+// const add = memoizedAdd();
+// console.log(add(5)); // Computing... 15
+// console.log(add(5)); // From cache 15
+
+
+// ----------------------------------Class Syntax and Methods
+
+// Purpose:
+// Provides clean OOP-style syntax in JS.
+
+// Advantages:
+
+// Encapsulation, reusability, inheritance.
+
+// Disadvantages:
+
+// Slightly more abstract (hidden prototype behavior).
+
+// Example:
+
+// class Car {
+//   constructor(brand) {
+//     this.brand = brand;
+//   }
+//   start() {
+//     console.log(`${this.brand} started`);
+//   }
+// }
+
+// const car1 = new Car("Tesla");
+// car1.start();
+
+
+// -----------------------------------------JAVASCRIPT
+//  Javascript Is a synchronous single-thread language.
+//  Everything in javascript happens in the execution context, there are two
+//  components in the execution context, memory or variable environment
+//  where the key value is stored and the code or thread of execution. This is
+//  where the code is executed line by line
+//  Javascript is used to create dynamic and interactive web content like
+//  applications and browsers.
+//  ● WebApplications, Mobile Applications, Games
+//  ● Execution Context- Everything in JavaScript happens inside a global
+//  .----------------------------------execution context
+
+//  ● -----------------------------Call Stack
+
+//  The Call stack maintains the order of execution context.
+//  ● - --------------------------Undefined Datatypes
+// A variable has been declared but not initialized with a
+//  value
+//  ● Notdefined-
+//  Variable doesn't exist
+//  ● --------------------------Primitive
+
+//  primitive data structure is predefined by the programming
+//  language-
+//  int, float, char, boolean
+
+//  ● ----------------------------Non-primitive
+
+//  is a data structure that is built up from primitive data
+
+//  .---------------------------------structures
+
+//  arrays, objects, classes and functions
+
 
 // //--------------for each--------------------
 // -used to loop through elements of an array and execute a function for each element.
@@ -22,7 +432,7 @@
 
 // Synchronous only — Doesn’t work well with async/await directly.
 
-// Functional style — Encourages declarative programming.
+// Functional style — Encourages declaative programming.
 
 //  const number = [1, 2, 3, 4, 5];
 
@@ -872,6 +1282,23 @@
 // console.log(iterator.next()); // Output: { value: undefined, done: true }
 
 //----------------------generator new method------------------------
+// function* evenNumbers(arr) {
+//     for (let num of arr) {
+//         if (num % 2 === 0) {
+//             yield num; 
+//         }
+//     }
+// }
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// let iterate = evenNumbers(arr);
+
+// console.log(iterate.next().value); // Output: 2
+// console.log(iterate.next().value); // Output: 4
+// console.log(iterate.next().value); // Output: 6
+// console.log(iterate.next().done);  // Output: true
+
+// ,,,
 
 // next(), return(), throw() — control execution.
 // ✅ Fine control over iteration.

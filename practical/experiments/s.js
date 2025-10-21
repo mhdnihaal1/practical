@@ -35,32 +35,22 @@
 // ========================remove duplicates  ==============================
 
 
-// const arr = [5,2,2,1,7,5,5]
-// let arrr=[]
-//     for(let i=0;i<arr.length;i++){
-//         let one=true
-//         for(let j=0;j<arr.length;j++){
-//             if(j!==i && arr[i]==arr[j]){
-//              one=false
-//             }
-//         }
-//         if(!one){
-//             arrr.push(arr[i])
+const arr = [5,2,2,1,7,5,5,5]
 
-//         }
-//     }
+for(let i=0 ;i<arr.length;i++){
+  for(let j=0;j<arr.length;j++){ 
+      // console.log(i,j)
+    if(i!==j && arr[i]==arr[j]){ 
+      console.log("true")
+      console.log(i,arr.splice(j,1))
+      console.log(arr)
+    }
+  }
+}
 
-
-// console.log(arrr);
+console.log(arr);
 
 //======================================================
 
 
-let ar = [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 1];
-let arr = 0;
-
-for (let i = 0; i < ar.length; i++) {
-  arr ^= ar[i];
-}
-
-console.log(arr); 
+ 

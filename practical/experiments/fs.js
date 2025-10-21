@@ -1,22 +1,4 @@
 
-// /function currying(a) {
-//     return function(b) {
-//         return function(c) {
-//             return a + b + c;
-//         };
-//     };
-// }
-
-// console.log(currying(10)(20)(30)); // Output: 60
-
-//=========================================================================
-// function sample(){
-//     console.log(this)
-
-// }
-
-// sample.call('nihal')
-
 //==========================================================================
 
 // let arr = [1, 3, 4, 8, 9, 6, 7];
@@ -70,23 +52,7 @@
 //     console.log(`Server is running on port ${port}`);
 // });
 
-//=====================================================================
-
-// function* evenNumbers(arr) {
-//     for (let num of arr) {
-//         if (num % 2 === 0) {
-//             yield num; 
-//         }
-//     }
-// }
-
-// let arr = [1, 2, 3, 4, 5, 6];
-// let iterate = evenNumbers(arr);
-
-// console.log(iterate.next().value); // Output: 2
-// console.log(iterate.next().value); // Output: 4
-// console.log(iterate.next().value); // Output: 6
-// console.log(iterate.next().done);  // Output: true
+ 
 
 
 

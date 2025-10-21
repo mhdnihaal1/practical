@@ -1,3 +1,29 @@
+
+// Mongo DB practical 
+// -----------------------
+//  ◦ accumulator(min,max,avg)
+//  ◦ regex()
+//  ◦ find()
+//  ◦ findOne()
+//  ◦ count()
+//  ◦ sort()
+//  ◦ skip()
+//  ◦ limit()
+//  ◦ group()
+//  ◦ match()
+//  ◦ project()
+//  ◦ distinct():for finding the unique array values
+//  ◦ insertOne():one document 
+//  ◦ insertMany():many document
+//  ◦ updateOne()(set,unset,inc)
+//  ◦ updateMany()
+//  ◦ replaceOne()
+//  ◦ deleteOne()
+//  ◦ deleteMany()
+//  ◦ createIndex()
+//  ◦ dropIndex()
+
+
 //================insertOne and insertMany===============
 
 db.collectionName.insertOne({ name: "Alice", age: 25, city: "New York" });

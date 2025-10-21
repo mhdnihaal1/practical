@@ -7,6 +7,8 @@
 // console.log({} + false); // "[object Object]false"
 
 // console.log([1, 2] + 3); // "1,23"
+
+// console.log({"1":"2"} + 3); // "[object Object]3"
  
 // console.log(5 + "5"); // "55"
 
@@ -20,11 +22,11 @@
 
 // console.log(NaN === NaN); // false
 
-// console.log("5" - 2); // 3
+// console.log(2 - "5"); // -3
 
 // console.log(true == 1); // true
 
-// console.log({} == "[object Object]"); // false
+// console.log({} == "[object Object]"); // true
 
 // console.log(isNaN(function() {})); // true
 
@@ -38,7 +40,7 @@
 
 // console.log(0 == "0"); // true
 
-// console.log("" == false); // true
+// console.log(" " == false); // true
 
 // console.log([false] == false); // false
 
@@ -72,7 +74,7 @@
 
 // console.log(-0 == 0); // true
 
-// console.log([1, 2] == "1,2"); // true
+// console.log([1, 2] == "1,2",2); // true 2
 
 // console.log({ valueOf: () => 5 } + 5); // 10
 
@@ -83,6 +85,6 @@
 // console.log({} == {}); // false
 
 
-// var a =1 + abc;
-//  abc = 10;
-// console.log(a)
+// // var a =1 + abc;
+// //  abc = 10;
+// // console.log(a)
