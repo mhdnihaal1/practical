@@ -1,5 +1,3 @@
-
-
 //           git 
 // ====================
 // -init:making a backup folder structure
@@ -21,6 +19,33 @@
 // -pull:taking the data from the main
 //     pull request:asking request to  push the data
 
+
+// Learn basics of git and nginx 
+// Logs
+// Google login bug
+// Wishlist to cart
+// Exception handling 
+// Validations
+// Versioning
+// CICD
+// Elastic IP
+// DNS
+// SSH
+// SSL
+// Validations in e-commerce 
+
+
+
+// WEEK -12 
+// --------
+// -how to create branch in git 
+// -how to revert a commit 
+// -git reset –hard
+// -what is nginx? 
+// -difference between reverse proxy and forward proxy 
+// -default port of  https, mongodb
+// -CORS 
+// -subdomain 
 
 
 

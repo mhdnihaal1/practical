@@ -9,8 +9,86 @@
 
 
 
+// for of loop: Iterates over iterable values like strings or arrays.
+
+// for in loop: Iterates over enumerable properties of an object.
+
+// Promise.race vs Promise.any: race resolves/rejects on the first settled promise, while any resolves on the first fulfilled promise.
+
+// delete: Removes a property from an object.
+
+// undefined vs null: undefined means a variable is declared but not assigned; null is an assigned empty value.
+
+// use strict: Enables strict mode, catching common coding errors.
+
+// Callback hell: Nesting multiple callbacks, leading to hard-to-read code.
+
+// Clean-up functions: Used in useEffect or event listeners to clean resources when a component unmounts.
+
+// Applications of closure: Encapsulation, data hiding, and maintaining state in functions.
+
+// Shadowing: Declaring a variable in a nested scope with the same name as an outer scope variable.
+
+// Array.some: Checks if at least one element in an array passes a test.
+
+// DOM manipulation methods: Methods like getElementById, querySelector, and appendChild modify the DOM.
+
+// Deep copy vs shallow copy: Deep copy duplicates nested objects; shallow copy only duplicates references.
+
+// map vs forEach: map returns a new array; forEach executes a function for each element without returning.
+
+// default parameters: Allows functions to have default values for parameters.
+
+// callbacks: Functions passed as arguments to other functions.
+
+// Error objects: Built-in objects for handling errors with properties like message and name.
+
+// typeof vs instanceof: typeof checks type of a value; instanceof checks prototype chain for object type.
+
+// HOF example: A function like map or filter that takes another function as an argument.
+
+// Function borrowing in JS: Using call, apply, or bind to use methods from one object on another.
+
+// promise.allSettled: Resolves when all promises settle, with statuses of each promise.
+
+// Optional chaining: Access nested object properties safely with ?..
+
+// yield vs return: yield pauses generator execution; return exits a function.
 
 
+
+
+
+// Prototype chain: Mechanism for inheritance in JavaScript objects.
+
+// OOPS concepts: Includes encapsulation, inheritance, abstraction, and polymorphism.
+
+// Rest operator: Collects arguments into an array.
+
+// process.nextTick(): Executes a callback after the current operation but before the next event loop tick.
+
+// setImmediate: Executes a callback immediately after the I/O phase of the event loop.
+
+// proxy object: Intercepts and customizes operations on objects.
+
+// Prototype pollution: Security issue where prototype objects are modified maliciously.
+
+// nullish operator: Returns the right-hand operand if the left-hand operand is null or undefined.
+
+// flatMap: Maps and flattens nested arrays into a single-level array.
+
+// event delegation: Using a single event listener for dynamically generated elements.
+// event propagation: Includes event capturing, bubbling, and delegation.
+
+// object methods: Includes keys, values, entries, and assign for object manipulation.
+
+// WeakRef: Creates weak references to objects for memory management.
+
+// Arrow functions: Compact syntax for defining functions.
+
+// event emitter: Object pattern for event-driven programming in Node.js.
+
+// polyfills: Code that adds missing features in older JavaScript environments.
 
 
 // --------------------------------Web API
@@ -159,6 +237,7 @@
 // 🧠 Purpose
 
 // A closure allows a function to “remember” variables from its outer scope even after that outer function has finished executing.
+// closure: Function with access to its parent scope even after the parent has closed.
 
 // ✅ Advantages
 
@@ -267,6 +346,8 @@
 //-------------------------- ES6 Alternative for IIFE
 
 // Purpose:
+// IIFE: Immediately Invoked Function Expression runs immediately after being defined.
+
 // In ES6 modules, top-level code runs in its own scope — no need for IIFE.
 
 // Example:
@@ -317,10 +398,18 @@
 // let sum = (a, b) => a + b;
 // console.log(sum(5, 10));
 
+// Array cloning: Duplicate arrays using slice, concat, or the spread operator.
+
+
+//-------------------------------Spread operator
+
+// Spread operator: Expands elements of arrays or objects.
 
 // -------------------------------------Memoization
 
 // Purpose:
+// Memoization: Caching results of expensive function calls for reuse.
+
 // Caches function results to improve performance on repeated calls.
 
 // Advantages:
@@ -530,6 +619,7 @@
 // --------------hoisting----------------------
 
 // Hoisting is JavaScript’s behavior of moving variable and function declarations to the top of their scope before code execution.
+// Hoisting: Moves variable and function declarations to the top of their scope.
 
 // Advantages
 
@@ -552,6 +642,7 @@
 //   console.log('hoisted')
 // }
 //--------------------------------currying-----------------------------------
+// currying: Transforming a function with multiple arguments into nested single-argument functions.
 
 // Breaking a function that takes multiple arguments into a series of functions that take one argument at a time.
 
@@ -1259,6 +1350,7 @@
 // console.log(rest)
 
 //----------------generator function------------
+// generator function: Produces an iterable sequence using function*.
 
 // Purpose: Yields multiple values lazily.
 // ✅ Memory efficient.
@@ -1411,6 +1503,8 @@
 //----------------------------do-while---------------------------
 
 // Purpose: Runs loop at least once.
+// Do-while syntax: Executes a block at least once and continues as long as the condition is true.
+
 // ✅ Guaranteed one run.
 // ❌ Can run unnecessarily once.
 
@@ -1601,23 +1695,6 @@
 //   console.log(err);
 // });
 
-//-----------------------------server creation ---------------------------------
-
-// const http = require('http');
-// const fs = require('fs')
-
-// http.createServer((req,res)=>{
-
-//   fs.readFile('s.js',(err,data)=>{
-
-//     res.writeHead(200,({'content-type':'text/js'}))
-//     res.write(data)
-//     res.end('Hello')
-//   })
-// }).listen(3003,()=>{
-// console.log('server is running...')
-// })
-
 //----------------------------------export-----------------------------------
 
 // function p(){
@@ -1722,7 +1799,7 @@
 
 // Useful for storing private or temporary object data.
 
-// ❌ Disadvantages
+// ❌ Disadvantages 
 
 // Not iterable.
 
@@ -1791,6 +1868,7 @@
 //----------------call
 
 // Purpose: Calls a function immediately, allowing you to set this manually and pass arguments individually.
+// call: Invokes a function with a specific this context and arguments.
 
 // ✅ Advantages
 
@@ -1813,6 +1891,7 @@
 //----------------------apply
 
 // Purpose: Same as call() but accepts arguments as an array.
+// apply: Similar to call but takes arguments as an array.
 
 // ✅ Advantages
 
@@ -1832,6 +1911,7 @@
 //-----------------------bind-------
 
 // Purpose: Returns a new function with a fixed this value and optional preset arguments.
+// bind: Returns a new function bound to a specific this context.
 
 // ✅ Advantages
 
@@ -2110,166 +2190,6 @@
 // console.log(new Date().toLocaleDateString({day:'numeric',month:'long',year:'numeric'}))
 
 
-
-// ================================================================================================= Nodejs =====================================================================================
-
-
-
-
-//------------------------------------middleware------------------------------------------
-
-// const express=require('express')
-// const app=express()
-
-
-
-//   app.get('./home',(req,res,next)=>{
-//   const error=new Error('error simulated')
-//   next()
-// })
-
-// const middleware=(err,req,res,next)=>{
-
-//   console.error(err.stack)
-       
-//   res.status(500),json('error occured')   
-
-// }
-
-// app.use(middleware)
-
-//    app.listen(7002,()=>{
-  //   console.log('server is running')
-  // })
-
-// //--------------------------------getting number from user and giving it odd or even---------------------------------------
-
-// const express=require('express')
-// const app = express()
-
-// app.get('/val/num',(req,res)=>{
-//   const num=req.params.num 
-
-//    if(isNaN(num)){
-//     res.status(400).json({error:'failed'})
-//   }else{
-//     const result= num%2===0?'even':'odd';
-//     res.json({num,result})
-
-//   }
-// }).listen(3000,()=>{
-//   console.log('server is running')
-// })
-
-//-------------------------------------------  route  --------------------------------------------------
-
-// const express=require('express')
-// const app=express()
-
-
-// // app.use((req,res,next)=>{
-// //   console.error(error)
-// //   next()
-// // })
-
-
-// // app.use((req,res,next)=>{
-// //   console.error(error)
-// //   next()
-// // })
-// app.get('/',(req,res)=>{
-//   res.send('Hello every one')
-//  // console.log('hi everyone')
-// })
-
-// app.get('/homes',(req,res)=>{
-//   res.send('Hello every two')
-//  // console.log('hi everyone')
-// })
-
-// app.listen(7002,()=>{
-//   console.log('server is running')
-// })
-
-
-//------------------------------fs read file and write into another file-----------------------------------------
-
-//delte =unlink
-//rename =rename
-//update=update
-
-//  const fs=require('fs')
-
-//  fs.readFile('./dupe.html','UTF8',(err,data)=>{
-//   if(err){
-//     console.log(err);
-//     return
-//   }
-
-//   fs.writeFile('./dupo.html',data,'UTF8',(err)=>{
-//     if(err){
-//       console.log(err);
-//     }
-//     console.log('send');
-//     return
-//   })
-
-//  })
-
-
-//-------------------------------server creation------------------------------
-
-// const http = require('http')
-// const fs = require('fs')
-
-// http.createServer((req,res)=>{
-
-// fs.readFile('./s.js',(err,data)=>{
-
-// res.writeHead(200,{'content-type':'text/html'})
-// res.write(data)
-// res.end('hello')
-
-// })
-
-// }).listen(4000,()=>{
-// console.log('running)
-// })
-
-//-----------------api not working----------------
-
-// const express =require ('express')
-// const path = require('path')
-
-// const app=express()
-
-// app.set('view engine','ejs')
-// app.set(express.static('views'))
-// app.get('/',(req,res)=>{
-// res.render('sample.js')
-// })
-
-// app.listen(3000,()=>{
-//   console.log("running...")
-// })
-
-
-//------------------------create file and add date -----------------------
-
-// const fs = require('fs');
-
-// const date = Date()
-
-// fs.writeFile('example1.txt',date,'utf8',(err)=>{
-
-// if(err){
-//   console.error('error',err)
-// }else{
-
-//   console.log('file successfully created  :',date)
-// }
-
-// })
 //-------------------identifying number in string ------------
 // const str = "I have 5 pets.";
 // const regex = /\d/;  // Matches any digit
@@ -2277,3 +2197,6 @@
 // const containsNumber = str.match(regex);
 
 // console.log(containsNumber*2);
+
+
+// anonymous function

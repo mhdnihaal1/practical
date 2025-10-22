@@ -177,7 +177,7 @@
 // 17. `Math.sqrt(x)`: Returns the square root of `x`.
 
 // **Random Number Methods:**
-
+ 
 // 18. `Math.random()`: Returns a random floating-point number between 0 (inclusive) and 1 (exclusive).
 // 19. `Math.floor(Math.random() * (max - min + 1)) + min`: Generates a random integer between `min` (inclusive) and `max` (inclusive).
 

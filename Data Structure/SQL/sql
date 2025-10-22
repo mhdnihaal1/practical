@@ -1,0 +1,41 @@
+// WEEK-16
+// -------
+// SQL vs MySQL
+// Primary key vs Unique key
+// CHECK
+// DEFAULT
+// constraints in SQL
+// Foreign keys
+// CROSS JOIN
+// SELF JOIN
+// WHERE vs HAVING
+// Entities
+// Normalization & normal forms
+// TRUNCATE vs DROP
+// scalar function
+// sub query
+// UNION
+// 1. unique key
+// 2. candidate keys
+// 3. ACID properties- refer more
+// 4. purpose of normalisation
+// 5. 1NF, 2NF, 3NF
+// 6. stored procedure.
+// 7. views
+// 8. how to create a view
+// 9. SQL injection, how to prevent SQL injection.
+// 10. like and ilike
+
+// - create a table and inset values into it.
+// - fetch the details of students starting with a particular letter.
+// -difference between consistency and atomicity 
+// -how indexing works
+// -sql order of execution
+// -capitalize the first character of name 
+// -write a query to get the name of team with highest trophy
+// -create a table with foreign field
+// BigSerial
+// Sequences
+// Union vs join 
+// Trigger
+// Sub queries 

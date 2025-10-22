@@ -82,7 +82,7 @@
 
 // console.log(isNaN("Hello")); // true
 
-// console.log({} == {}); // false
+// console.log({} == {}); // false 
 
 
 // // var a =1 + abc;
