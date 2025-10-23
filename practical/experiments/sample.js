@@ -1,12 +1,17 @@
- // find the freq of elements in an array
-// - countdown timer that ticks to 0 and stops 
-// - tomorrow’s date in DD/MM/YYYY format
-// - .reduce(): count occurrences of a value 
-// - remove all occurrences of a value from an array
+ 
+ // - remove all occurrences of a value from an array
 // - remove nth element from array
 // - cancel a setTimeout after 4 seconds
 // - switch syntax
-
+ // - .reduce(): count occurrences of a value 
+// - remove all occurrences of a value from an array
+// - remove nth element from array
+// - cancel a setTimeout after 4 seconds 
+ // - running async functions without await 
+// - destructuring (destructure array of 10 elements in 3 variables)
+// - remove keys correspond to non-strings in object
+ // - countdown timer that ticks to 0 and stops 
+// - tomorrow’s date in DD/MM/YYYY format
 
 
 // for of loop: Iterates over iterable values like strings or arrays.
@@ -902,6 +907,152 @@
 //     place:'vadakara'
 // }
 // console.log(obj)
+
+
+// -----------------------------------Boxing
+
+// 🎯 Purpose:
+// Boxing automatically converts primitive values (like numbers, strings, booleans)
+// into object wrappers (Number, String, Boolean) when you call object methods.
+
+// ✅ Advantages:
+
+// Lets primitives use object methods (like .toUpperCase() or .toFixed()).
+
+// ❌ Disadvantages:
+
+// Creates temporary objects → slightly less efficient.
+
+// 💻 Example:
+
+// let str = "hello";
+// console.log(str.toUpperCase()); // "HELLO" — behind the scenes, JS boxes 'str' into a String object
+
+// ---------------------------------Labels
+
+// 🎯 Purpose:
+// Labels are used with loops to control nested loops using break or continue.
+
+// ✅ Advantages:
+
+// Helps exit from multiple nested loops cleanly.
+
+// ❌ Disadvantages:
+
+// Can make code less readable if overused.
+
+// 💻 Example:
+
+// outerLoop: for (let i = 0; i < 3; i++) {
+//   for (let j = 0; j < 3; j++) {
+//     if (i === 1 && j === 1) break outerLoop;
+//     console.log(i, j);
+//   }
+// }
+
+// ---------------------Callback Hell & String Coercion
+// Callback Hell
+
+// Purpose: Handling async operations using nested callbacks.
+
+// ✅ Advantage:
+
+// Works with async operations (like file, DB, API).
+
+// ❌ Disadvantage:
+
+// Difficult to read and maintain (“pyramid of doom”).
+
+// 💻 Example:
+
+// doSomething(() => {
+//   doNext(() => {
+//     doMore(() => {
+//       console.log("Done!");
+//     });
+//   });
+// });
+
+// ----------------------------Object.create() vs Constructor Pattern
+
+// Purpose: Both create objects but differently.
+
+// ✅ Advantage:
+
+// Object.create() → Simpler inheritance.
+
+// Constructor → Creates multiple instances easily.
+
+// ❌ Disadvantage:
+
+// Object.create() → No automatic constructor setup.
+
+// Constructor → More verbose syntax.
+
+// 💻 Example:
+// // Object.create
+// const personProto = {
+//   greet() { console.log(`Hi, I'm ${this.name}`); }
+// };
+// const person1 = Object.create(personProto);
+// person1.name = "Nihal";
+// person1.greet();
+
+// // Constructor Pattern
+// function Person(name) {
+//   this.name = name;
+// }
+// Person.prototype.greet = function() {
+//   console.log(`Hi, I'm ${this.name}`);
+// };
+// const person2 = new Person("Ali");
+// person2.greet();
+
+// ---------------------------Passed by Value vs Passed by Reference
+
+// Purpose: Defines how data is sent to functions.
+
+// ✅ Advantage:
+
+// Value: Prevents original data from being changed.
+
+// Reference: Allows modifying original data directly.
+
+// ❌ Disadvantage:
+
+// Value: Copying large data can be slower.
+
+// Reference: Unintended changes to original data.
+
+// 💻 Example:
+// let a = 10;
+// let b = a; // Passed by value
+// b = 20;
+// console.log(a); // 10 (unchanged)
+
+// let obj1 = { name: "Nihal" };
+// let obj2 = obj1; // Passed by reference
+// obj2.name = "Ali";
+// console.log(obj1.name); // "Ali" (changed)
+
+// -------------------------------JIT (Just-In-Time Compilation)
+
+// Purpose: JIT compiles JavaScript into machine code at runtime for faster execution.
+
+// ✅ Advantage:
+
+// Improves performance by optimizing code on the fly.
+
+// ❌ Disadvantage:
+
+// First-time execution can be slightly slower due to compilation time.
+
+// 💻 Example (Concept):
+// // JS engines like V8 use JIT internally:
+// function add(a, b) {
+//   return a + b;
+// }
+// add(5, 10);
 
 // -----------------------------------callback---------------------------------
 

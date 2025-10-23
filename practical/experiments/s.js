@@ -49,29 +49,6 @@ console.log(arr);
 
 //======================================================
  
-// hoisting in normal function vs arrow function
-// find the freq of elements in an array
-// - JIT
- // - memoization 
- // - .reduce(): count occurrences of a value 
-// - remove all occurrences of a value from an array
-// - remove nth element from array
-// - cancel a setTimeout after 4 seconds
-// - switch syntax
-// Passed By Value vs Passed By reference
- // Object.create vs Constructor Pattern
-// Callback Hell String Coercion
- 
-
 
 
  
- 
- // - running async functions without await
-// - boxing *
- // - labels  
- // - static
-// - destructuring (destructure array of 10 elements in 3 variables)
-// - remove keys correspond to non-strings in object
- // - countdown timer that ticks to 0 and stops 
-// - tomorrow’s date in DD/MM/YYYY format

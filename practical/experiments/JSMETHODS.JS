@@ -133,12 +133,8 @@
 
 // 33. **`findLast(callback)`**: Returns the last element in the array that satisfies the provided testing function.
 
-
 // 35. **`toLocaleString()`**: Returns a string representing the elements of the array in the specified locale.
 
-
-
- 
 
 // _________________________________________________________________________________________________________________________________________________________________________
 
