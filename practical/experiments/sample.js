@@ -1,24 +1,22 @@
- 
- // - remove all occurrences of a value from an array
+// - remove all occurrences of a value from an array
 // - remove nth element from array
 // - cancel a setTimeout after 4 seconds
 // - switch syntax
- // - .reduce(): count occurrences of a value 
+// - .reduce(): count occurrences of a value
 // - remove all occurrences of a value from an array
 // - remove nth element from array
-// - cancel a setTimeout after 4 seconds 
- // - running async functions without await 
+// - cancel a setTimeout after 4 seconds
+// - running async functions without await
 // - destructuring (destructure array of 10 elements in 3 variables)
 // - remove keys correspond to non-strings in object
- // - countdown timer that ticks to 0 and stops 
+// - countdown timer that ticks to 0 and stops
 // - tomorrow’s date in DD/MM/YYYY format
 
+// anonymous function: A function which have no name
 
 // for of loop: Iterates over iterable values like strings or arrays.
 
 // for in loop: Iterates over enumerable properties of an object.
-
-// Promise.race vs Promise.any: race resolves/rejects on the first settled promise, while any resolves on the first fulfilled promise.
 
 // delete: Removes a property from an object.
 
@@ -26,49 +24,23 @@
 
 // use strict: Enables strict mode, catching common coding errors.
 
-// Callback hell: Nesting multiple callbacks, leading to hard-to-read code.
-
-// Clean-up functions: Used in useEffect or event listeners to clean resources when a component unmounts.
-
 // Applications of closure: Encapsulation, data hiding, and maintaining state in functions.
 
 // Shadowing: Declaring a variable in a nested scope with the same name as an outer scope variable.
 
-// Array.some: Checks if at least one element in an array passes a test.
-
 // DOM manipulation methods: Methods like getElementById, querySelector, and appendChild modify the DOM.
-
-// Deep copy vs shallow copy: Deep copy duplicates nested objects; shallow copy only duplicates references.
-
-// map vs forEach: map returns a new array; forEach executes a function for each element without returning.
-
-// default parameters: Allows functions to have default values for parameters.
-
-// callbacks: Functions passed as arguments to other functions.
 
 // Error objects: Built-in objects for handling errors with properties like message and name.
 
 // typeof vs instanceof: typeof checks type of a value; instanceof checks prototype chain for object type.
 
-// HOF example: A function like map or filter that takes another function as an argument.
-
 // Function borrowing in JS: Using call, apply, or bind to use methods from one object on another.
 
 // promise.allSettled: Resolves when all promises settle, with statuses of each promise.
 
-// Optional chaining: Access nested object properties safely with ?..
-
-// yield vs return: yield pauses generator execution; return exits a function.
-
-
-
-
-
 // Prototype chain: Mechanism for inheritance in JavaScript objects.
 
 // OOPS concepts: Includes encapsulation, inheritance, abstraction, and polymorphism.
-
-// Rest operator: Collects arguments into an array.
 
 // process.nextTick(): Executes a callback after the current operation but before the next event loop tick.
 
@@ -83,19 +55,15 @@
 // flatMap: Maps and flattens nested arrays into a single-level array.
 
 // event delegation: Using a single event listener for dynamically generated elements.
+
 // event propagation: Includes event capturing, bubbling, and delegation.
-
-// object methods: Includes keys, values, entries, and assign for object manipulation.
-
-// WeakRef: Creates weak references to objects for memory management.
-
-// Arrow functions: Compact syntax for defining functions.
 
 // event emitter: Object pattern for event-driven programming in Node.js.
 
 // polyfills: Code that adds missing features in older JavaScript environments.
 
-
+//  new Set:finds out the unique value on array  use add get has
+ 
 // --------------------------------Web API
 
 // Purpose:
@@ -128,6 +96,7 @@
 // Disadvantage: Can’t handle async or external state.
 
 // -------------------------------------------Arrow Functions
+//    : Compact syntax for defining functions.
 
 // Purpose:
 // Short syntax for writing functions without their own this context.
@@ -139,11 +108,11 @@
 
 // Purpose:
 // Stores key–value pairs with unique keys and preserves insertion order.
+// use set get delete has
 
-// Advantage: Allows any data type as a key.
+// Advantage: Allows any data type as a key.//string ,number ,array and object
 // Disadvantage: Slightly more memory than objects.
 
- 
 // --------------------------------------------Throw Statement
 
 // Purpose:
@@ -159,7 +128,7 @@
 
 // Advantage: Prevents variable leakage to outer scope.
 // Disadvantage: Variables can’t be accessed outside the block.
-      
+
 // --------------------------------------Parent class of Array
 
 // Purpose: Arrays in JS are derived from the Array constructor, which itself extends Object.
@@ -167,7 +136,6 @@
 // Advantage: Inherits all Object properties like toString, hasOwnProperty.
 
 // Disadvantage: Sometimes confusing when checking types (typeof [] === "object").
-
 
 // --------------------------------------Map vs Object
 
@@ -178,7 +146,6 @@
 // Order	Maintains insertion order	Not guaranteed
 // Iteration	Easier with .forEach	Requires manual iteration
 
-
 // ----------------------------------------------Object.entries()
 
 // Purpose: Converts an object into an array of [key, value] pairs.
@@ -186,14 +153,12 @@
 // Advantage: Makes iteration and transformation easy.
 // Disadvantage: Not suitable for very large objects due to memory overhead.
 
-
 // --------------------------------------eval()
 
 // Purpose: Executes a string of JS code.
 
 // Advantage: Dynamically run code at runtime.
 // Disadvantage: Highly insecure and slow (avoid in production)
-
 
 // --------------------------------Properties of Error()
 
@@ -214,7 +179,6 @@
 // Advantage: Non-blocking execution.
 // Disadvantage: You can’t catch errors easily.
 
-
 // -------------------------------------Boxing
 
 // Purpose: JS wraps primitive values into objects when needed (like new Number(5) automatically).
@@ -222,14 +186,12 @@
 // Advantage: Allows using methods on primitives.
 // Disadvantage: Slight performance cost.
 
-
 // -----------------------Labels
 
 // Purpose: Used with loops for breaking specific loops.
 
 // Advantage: Helps control nested loops.
 // Disadvantage: Reduces readability.
-
 
 //---------------------------------- static (in class)
 
@@ -295,7 +257,6 @@
 
 // Arrow functions don’t bind their own this, which can lead to bugs.
 
-
 // --------------------------finally
 
 // Purpose:
@@ -311,7 +272,6 @@
 
 // Can hide errors if not used carefully (e.g., throwing inside finally)
 
-
 // ----------------------------Nullish Coalescing (??)
 
 // Purpose:
@@ -324,7 +284,6 @@
 // Disadvantages:
 
 // Limited to null and undefined (not falsy values like 0)
-
 
 // n----------------------------------Hoisting: Normal vs Arrow Function
 
@@ -385,7 +344,6 @@
 // const user = { [id]: 123 };
 // console.log(user[id]); // 123
 
-
 // ---------------------------------JIT (Just-In-Time Compilation)
 
 // Purpose:
@@ -404,7 +362,6 @@
 // console.log(sum(5, 10));
 
 // Array cloning: Duplicate arrays using slice, concat, or the spread operator.
-
 
 //-------------------------------Spread operator
 
@@ -439,7 +396,6 @@
 // console.log(add(5)); // Computing... 15
 // console.log(add(5)); // From cache 15
 
-
 // ----------------------------------Class Syntax and Methods
 
 // Purpose:
@@ -466,7 +422,6 @@
 
 // const car1 = new Car("Tesla");
 // car1.start();
-
 
 // -----------------------------------------JAVASCRIPT
 //  Javascript Is a synchronous single-thread language.
@@ -501,7 +456,6 @@
 //  .---------------------------------structures
 
 //  arrays, objects, classes and functions
-
 
 // //--------------for each--------------------
 // -used to loop through elements of an array and execute a function for each element.
@@ -539,8 +493,7 @@
 // Element at index 1: 2
 // Element at index 2: 3
 // Element at index 3: 4
-// Element at index 4: 5  it modify on original array 
-
+// Element at index 4: 5  it modify on original array
 
 // //-------------------map---------------------------
 
@@ -591,7 +544,7 @@
 // })
 
 // console.log(filter);
- 
+
 // ------------------------  reduce  ----------------------
 
 // Used to reduce an array to a single value (sum, average, object, etc.).
@@ -669,15 +622,15 @@
 
 // Used in frameworks (like React or Redux) for function composition and partial application.
 
-  // function sum(a){
-  //   return function (b){
-  //     return function (c){
-  //       return a+b+c
-  //     }
-  //   }
-  // }
-  // console.log(sum(1)(2)(3));
-  
+// function sum(a){
+//   return function (b){
+//     return function (c){
+//       return a+b+c
+//     }
+//   }
+// }
+// console.log(sum(1)(2)(3));
+
 // ------------------    closure   -------------------------
 
 // A closure is when a function remembers its outer scope variables, even after the outer function has finished executing.
@@ -708,7 +661,7 @@
 //       let z=243
 //       console.log(x+y+z);
 //      }
-//    c() 
+//    c()
 //   }
 //  b()
 // }
@@ -908,7 +861,6 @@
 // }
 // console.log(obj)
 
-
 // -----------------------------------Boxing
 
 // 🎯 Purpose:
@@ -1083,7 +1035,7 @@
 //   console.log(greet+' are you')
 // }
 
-// nihal('Muhammed Nihal',kp)                                                                                                                                                                                        
+// nihal('Muhammed Nihal',kp)
 
 //--------------------------------- shallow copy------------------------------------
 
@@ -1193,7 +1145,7 @@
 //     prop1: 40,
 //     prop2: "Hello",
 //   };
-  
+
 //   Object.freeze(Object);// it cannot changable
 
 // console.log(Object)
@@ -1404,7 +1356,6 @@
 
 // Promise.race([pro1,pro2,pro3]).then((result)=>console.log(result))
 
-
 //------------------------------setTimeout in async and await---------------------
 
 // Purpose: Runs a function after a delay.
@@ -1416,7 +1367,7 @@
 //   setTimeout(()=>{
 //  resolve(1000)
 //   },1000)
- 
+
 // })
 //  }
 
@@ -1464,17 +1415,16 @@
 // ❌ Can throw errors if undefined.
 
 // const person = {
-//   name:'John', 
+//   name:'John',
 //   age:30,
 //   place:'New York'
-  
+
 // };
 
 // // Using destructuring to extract only the 'age'
 // const {place} = person;
 
 // console.log(place);  // Output: New York
-
 
 //-------------------spread------------------
 
@@ -1528,7 +1478,7 @@
 // function* evenNumbers(arr) {
 //     for (let num of arr) {
 //         if (num % 2 === 0) {
-//             yield num; 
+//             yield num;
 //         }
 //     }
 // }
@@ -1568,7 +1518,7 @@
 // Purpose: Returns new objects without new.
 // ✅ Simple object creation.
 // ❌ No shared prototype (less efficient).
- 
+
 // function hello(name,age){
 //   return{
 //     name:name,
@@ -1598,7 +1548,6 @@
 
 // console.log(per.hi());
 
-
 //-------------------------------higher order function(Hof)--------------------
 
 // Purpose: Takes or returns another function.
@@ -1620,26 +1569,6 @@
 // console.log(num(45,21,multiple));
 
 
-
-//-----------------------weekset--------------------------------
-
-// Purpose: Stores only objects weakly (no memory leaks).
-// ✅ Auto garbage collection.
-// ❌ Not iterable.
-
-// let weakSet = new WeakSet();
-
-// let obj1 = { key: 'value1' }
-// let obj2 = { key0: 'value2' }
-
-// weakSet.add(obj1);
-// weakSet.add(obj2);
-
-// console.log(weakSet.has(obj1)); // Output: true
-
-// weakSet.delete(obj1);
-
-// console.log(weakSet.has(obj1)); // Output: false
 
 //-----------------immediate invoke function (IIFC)-------------
 
@@ -1694,8 +1623,7 @@
 
 //   const cityName = person?.address?.city
 
-//   console.log(cityName);   
-
+//   console.log(cityName);
 
 //------------------------async and await---------------------
 
@@ -1863,7 +1791,7 @@
 //--------------------------------callback--------------------------------------
 
 // function first (first,second){
-// console.log( first *second); 
+// console.log( first *second);
 // }
 
 // function second1(){
@@ -1871,20 +1799,18 @@
 
 // second1(first (2,50))
 
-
 //---------------------------------callback---------------------------------------
 
-// function person(num1,num2){      
+// function person(num1,num2){
 //       return num1*num2
-    
+
 //   }
-  
+
 //   function call(p){
 //      console.log(p)
 //   }
-  
-//   call(person(23,34))
 
+//   call(person(23,34))
 
 //-------------------------------object keys or values or entries(for key and value)-----------------------------
 
@@ -1899,13 +1825,37 @@
 // const n=Object.values(obj)
 // console.log(n)
 
-
 //--------------------------------default parameter---------------------------------
 
 // function name ( name='nihal'){
 //   console.log(name)
 // }
 // name()
+
+//-------------------------------------weakref--------------------------------------
+
+// WeakRef lets you create a weak reference to an object.
+
+// A weak reference does not prevent the object from being garbage-collected.
+
+// Useful when you want to access an object if it exists, but you don’t want to keep it alive in memory unnecessarily.
+
+// const obj = { name: "Nihal" };
+// const weakRef = new WeakRef(obj);
+
+// console.log(weakRef.deref()); // { name: "Nihal" }
+
+// // If obj is garbage collected, deref() returns undefined
+
+
+
+// difference btw 
+
+// WeakRef holds a weak reference to a single object.
+
+// You manually dereference it using .deref().
+
+// Useful when you want to access an object if it exists but not keep it alive in memory.
 
 
 //-------------------------------------weakset--------------------------------------
@@ -1940,6 +1890,14 @@
 
 // console.log(weakSet.has(obj2))
 
+// difference btw 
+
+// A WeakSet is like a Set, but can only store objects.
+
+// Objects in a WeakSet are weakly referenced → if the object is no longer referenced elsewhere, it can be garbage collected.
+
+// Cannot iterate over a WeakSet for the same reason.
+
 //------------------------------------ weakMap ---------------------------------------
 
 // Purpose: Stores key–value pairs where keys are objects and are weakly referenced (removed automatically if not used elsewhere).
@@ -1950,7 +1908,7 @@
 
 // Useful for storing private or temporary object data.
 
-// ❌ Disadvantages 
+// ❌ Disadvantages
 
 // Not iterable.
 
@@ -1966,7 +1924,15 @@
 
 // console.log(weakMap.get(obj1,obj2))
 
+// difference btw 
 
+// A WeakMap is like a Map, but keys must be objects.
+
+// Keys are weakly referenced → if the object key is no longer referenced elsewhere, it can be garbage collected.
+
+// Values can be anything (object, primitive, etc.).
+
+// Cannot iterate over a WeakMap because keys may disappear anytime.
 
 //-----------------class,constructor-----------------------------------------------
 
@@ -2092,7 +2058,7 @@
 // const { Script } = require("vm");
 
 //======================================
-// const obj = { a: 1, b: 2, c: 3 }; 
+// const obj = { a: 1, b: 2, c: 3 };
 // for(let x in obj){
 //     console.log(x+':'+obj[x]);
 // }
@@ -2106,7 +2072,6 @@
 //     console.log(key + ': ' + value);
 // });
 
-
 //========================================================
 // const obj ={a:1,b:2,c:3}
 
@@ -2114,14 +2079,14 @@
 //     console.log(key+':'+obj[key]);
 // }
 
-//==========================================avg================= 
+//==========================================avg=================
 
 //const size=[4,7,2,47,8,2,3,4,2,2,]
 // //console.log(...size);
 
 // function calculateAverage(...array){
 //   //  console.log('hi');
-//    const sum=array.reduce((acc,num)=>acc+num) 
+//    const sum=array.reduce((acc,num)=>acc+num)
 //       const avg=sum/array.length
 //       console.log(avg);
 
@@ -2146,7 +2111,6 @@
 //------------------1 method-----------
 
 //  const size=[4,7,2,47,8,2,3,4,2,56,6,808,23,2934,35,2]
-
 
 //------------------2 method-----------
 // let max=0
@@ -2181,13 +2145,13 @@
 // const string = 'HELLO';
 
 // function titleCase(str) {
-    
+
 //         return  str[0]+str.slice(1).toLowerCase()
- 
+
 // }
 
 // const result = titleCase(string);
-// console.log(result); 
+// console.log(result);
 
 //============================================================
 // const array=[1,2,3,4,51,2,3,4,6,7,8,9]
@@ -2199,13 +2163,12 @@
 //       for(let j=0;j<array.length;j++){
 //         if(i!==j&&array[i]==array[j]){
 //          one=false
-//         }    
+//         }
 //     }
 //     if(one){
-//         newarray.push(array[i])        
+//         newarray.push(array[i])
 //     }
 //     } console.log(newarray);
-
 
 //===============================================
 
@@ -2229,8 +2192,6 @@
 // const limit=12;
 // const ones=primenumber(limit)
 // console.log(ones);
-
-
 
 //==========================switch===================
 
@@ -2260,7 +2221,7 @@
 
 // const c = a.join('')
 //             .split('')
-//             .map(Number); 
+//             .map(Number);
 
 // console.log(c);
 
@@ -2269,7 +2230,7 @@
 // const arr = [1,2,2,3,3,3,4]
 
 // const newarr = arr.reduce((acc,curr)=>{
-    
+
 //      acc[curr] = (acc[curr]||0)+1
 
 //     return acc
@@ -2279,13 +2240,12 @@
 //=============================================================================
 //  const array=[1,2,3,4,5,6,7,8,9]
 
-
 // const reduce = array.filter((num) =>num>7)
 // console.log(reduce);
 
 // const largestNumber = array.reduce((max, current) =>{
 //     max+current
-    
+
 //     console.log(max,current)
 // });
 // console.log(largestNumber);
@@ -2300,7 +2260,6 @@
 //  console.log(filteredArr)
 //=====================================================
 
-
 // const arr=[1,1,2,3,2]
 
 // const filter= arr.filter((elem,index,arr)=>{
@@ -2313,7 +2272,7 @@
 // const promise= Promise.resolve(10)
 // const promise2=promise.then((result)=>{
 //   // console.log(result+'1')
-//    return result*2 
+//    return result*2
 //   })
 
 //   console.log(promise2);
@@ -2330,7 +2289,7 @@
 // let max=0;
 // for(let i=0;i<sentences.length;i++){
 //   const split=sentences[i].split(" ")
-  
+
 //   count=split.length;
 //   max=count
 // console.log(count);
@@ -2340,7 +2299,6 @@
 
 // console.log(new Date().toLocaleDateString({day:'numeric',month:'long',year:'numeric'}))
 
-
 //-------------------identifying number in string ------------
 // const str = "I have 5 pets.";
 // const regex = /\d/;  // Matches any digit
@@ -2348,6 +2306,3 @@
 // const containsNumber = str.match(regex);
 
 // console.log(containsNumber*2);
-
-
-// anonymous function
